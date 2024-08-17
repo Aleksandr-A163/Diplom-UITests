@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import pages.KworkLinksPage;
 
 @Feature("Web tests")
-@DisplayName("Автотесты по платформе Kwork")
+@DisplayName("Автотесты для проверки ссылок на соц.сети и на маркетплейсы")
 @Tag("kwork-web")
 public class KworkLinksTests extends BaseTest {
 
@@ -41,5 +41,4 @@ public class KworkLinksTests extends BaseTest {
                 .goToGoogleLink()
                 .checkTitleNameInGoogleStore();
     }
-
 }
