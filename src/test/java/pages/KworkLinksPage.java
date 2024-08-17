@@ -14,7 +14,9 @@ public class KworkLinksPage {
     private final SelenideElement
             vkLink = $("a[href='https://vk.com/kwork_kwork']"),
             appleLink = $("a[href='https://apps.apple.com/ru/app/kwork/id1456387980']"),
-            titleName = $(".app-header");
+            appleStoreTitleName = $(".app-header"),
+            googleLink = $("a[href='https://play.google.com/store/apps/details?id=ru.kwork.app']"),
+            googleStoreTitleName = $(".Fd93Bb");
 
     @DisplayName("Проверка VK")
     @Step("Открыть главную страницу Kwork")
@@ -49,9 +51,25 @@ public class KworkLinksPage {
 
     @Step("Проверить наименование заголовка в apple store")
 
-    public KworkLinksPage checkTitleName() {
+    public KworkLinksPage checkTitleNameInAppleStore() {
         switchTo().window(1);
-        titleName.shouldHave(Condition.text("Kwork"));
+        appleStoreTitleName.shouldHave(Condition.text("Kwork"));
         return this;
     }
+
+    @DisplayName("Проверка перехода в google store из футера")
+    @Step("Перейти на страницу Kwork в Google Store по ссылке в футере")
+    public KworkLinksPage goToGoogleLink() {
+        executeJavaScript("arguments[0].click();", googleLink);
+        return this;
+    }
+
+    @Step("Проверить наименование заголовка в apple store")
+
+    public KworkLinksPage checkTitleNameInGoogleStore() {
+        switchTo().window(1);
+        googleStoreTitleName.shouldHave(Condition.text("Kwork"));
+        return this;
+    }
+
 }

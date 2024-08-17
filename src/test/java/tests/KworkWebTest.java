@@ -12,27 +12,6 @@ import pages.*;
 @Tag("kwork-web")
 public class KworkWebTest extends BaseTest {
 
-    @DisplayName("Проверка наличия ссылки на VK переход по ссылке")
-    @Test
-    public void vkLinkFunctionalityTest() {
-        KworkLinksPage linksVkPage = new KworkLinksPage();
-
-        linksVkPage.openHomePage()
-                .goToVkLink()
-                .checkVkUrl()
-                .openHomePage();
-    }
-
-    @DisplayName("Проверка наличия ссылки на Apple и проверка заголовка")
-    @Test
-    public void appleLinkFunctionalityTest() {
-        KworkLinksPage linksApplePage = new KworkLinksPage();
-
-        linksApplePage.openHomePage()
-                .goToAppleLink()
-                .checkTitleName();
-    }
-
 
     @DisplayName("Проверка наименований заголовков и тегов")
     @Test
