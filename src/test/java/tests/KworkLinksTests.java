@@ -1,14 +1,16 @@
 package tests;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.KworkLinksPage;
 
-@Feature("Web tests")
+@Feature("Social network and stores links")
+@Owner("Aleksandr Anosov")
 @DisplayName("Автотесты для проверки ссылок на соц.сети и на маркетплейсы")
-@Tag("kwork-web")
+@Tag("Links")
 public class KworkLinksTests extends BaseTest {
 
     @DisplayName("Проверка наличия ссылки на VK переход по ссылке")

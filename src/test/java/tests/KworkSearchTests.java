@@ -1,15 +1,17 @@
 package tests;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.KworkSearchPage;
 
 
-@Feature("Web tests")
+@Feature("Main search on website")
+@Owner("Aleksandr Anosov")
 @DisplayName("Автотесты по поиска на платформе")
-@Tag("kwork-web")
+@Tag("Search")
 public class KworkSearchTests extends BaseTest {
 
 

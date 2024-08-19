@@ -31,7 +31,7 @@ public class KworkLinksPage {
         return this;
     }
 
-    @Step("Проверить наличие адреса VK в строке браузера")
+    @Step("Проверка наличия адреса VK в строке браузера")
     public KworkLinksPage checkVkUrl() {
         switchTo().window(1);  // Переключаемся на новую вкладку
         // Проверяем, что текущий URL совпадает с ожидаемым
@@ -49,7 +49,7 @@ public class KworkLinksPage {
         return this;
     }
 
-    @Step("Проверить наименование заголовка в apple store")
+    @Step("Проверка наименование заголовка в apple store")
 
     public KworkLinksPage checkTitleNameInAppleStore() {
         switchTo().window(1);

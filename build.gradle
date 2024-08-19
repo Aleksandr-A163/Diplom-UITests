@@ -50,8 +50,8 @@ compileTestJava {
     options.encoding = 'UTF-8'
 }
 
-task kwork(type: Test) {
+task UI(type: Test) {
     useJUnitPlatform {
-        includeTags("kwork-web")
+        includeTags("Links", "Search", "Title", "Login")
     }
 }
