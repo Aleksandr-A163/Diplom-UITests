@@ -1,4 +1,4 @@
-# Автоматические тесты для фриланс биржи [Kwork](https://kwork.ru) 
+# Дипломный проект по атоматизации UI-тестов фриланс биржи [Kwork](https://kwork.ru) 
 <img width="30%" title="IntelliJ IDEA" src="media/logo/kwork-logo.svg">
 
 ## :scroll: Содержание:
@@ -55,7 +55,7 @@
 
 ### Запуск тестов из терминала
 ```
-gradle clean test UI -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="100.0"
+gradle clean test UI -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="121.0"
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>. 
 
@@ -101,6 +101,15 @@ gradle clean test UI -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 
+Тестирование поиска на сайте KWORK:
+
 <p align="center">
-  <img title="Selenoid Video" src="media/video/fulltest.gif">
+  <img title="Selenoid Video" src="media/video/search.gif">
 </p>
+
+Тестирование модальных окон авторизации:
+
+<p align="center">
+  <img title="Selenoid Video" src="media/video/modal.gif">
+</p>
+
