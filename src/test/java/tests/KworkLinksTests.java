@@ -24,7 +24,7 @@ public class KworkLinksTests extends BaseTest {
                 .openHomePage();
     }
 
-    @DisplayName("Проверка наличия ссылки на Apple и проверка заголовка")
+    @DisplayName("Проверка наличия ссылки на приложение Apple store и проверка заголовка")
     @Test
     public void appleLinkFunctionalityTest() {
         KworkLinksPage linksApplePage = new KworkLinksPage();
@@ -34,7 +34,7 @@ public class KworkLinksTests extends BaseTest {
                 .checkTitleNameInAppleStore();
     }
 
-    @DisplayName("Проверка наличия ссылки на Apple и проверка заголовка")
+    @DisplayName("Проверка наличия ссылки на приложение Google store и проверка заголовка")
     @Test
     public void googleLinkFunctionalityTest() {
         KworkLinksPage linksApplePage = new KworkLinksPage();

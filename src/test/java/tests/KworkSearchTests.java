@@ -10,7 +10,7 @@ import pages.KworkSearchPage;
 
 @Feature("Main search on website")
 @Owner("Aleksandr Anosov")
-@DisplayName("Автотесты по поиска на платформе")
+@DisplayName("Автотесты по проверке поиска на платформе")
 @Tag("Search")
 public class KworkSearchTests extends BaseTest {
 

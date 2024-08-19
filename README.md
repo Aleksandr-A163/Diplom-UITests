@@ -35,11 +35,14 @@
 
 ## :pushpin: Описание тестов:
 - ✓ *vkLinkFunctionalityTest() - Тест для проверки ссылки на VK*
-- ✓ *appleLinkFunctionalityTest() - Тест для проверки ссылки на магазин Apple* 
+- ✓ *appleLinkFunctionalityTest() - Тест для проверки ссылки на магазин Apple*
+- ✓ *googleLinkFunctionalityTest() - Тест для проверки ссылки на магазин Google* 
 - ✓ *websiteRepairPageTest() - Тест для проверки наименований заголовков и тегов*
 - ✓ *searchKirilFunctionalityTest() - Тест для проверки поиска по кириллице*
 - ✓ *searchEngFunctionalityTest() - Тест для проверки поиска по латинице*
 - ✓ *searchNumberFunctionalityTest() - Тест для проверки поиска на главной странице по числу*
+- ✓ *registrationModalTest() - Тест для проверки открытия модального окна регистрации*
+- ✓ *loginModalTest() - Тест для проверки открытия модального окна для входа в учетную запись*
  
 Содержание Allure-отчета:
 * Шаги теста;
@@ -52,7 +55,7 @@
 
 ### Запуск тестов из терминала
 ```
-gradle clean test kwork -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="100.0"
+gradle clean test UI -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="100.0"
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>. 
 
