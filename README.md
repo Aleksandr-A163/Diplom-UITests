@@ -55,7 +55,7 @@
 
 ### Запуск тестов из терминала
 ```
-gradle clean test UI -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="121.0"
+gradle clean test API 
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>. 
 
